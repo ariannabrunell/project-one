@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga With Ari</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(245, 239, 249) 30.1%,
+          rgb(207, 211, 236) 100.2%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h2 {
+        text-align: center;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+        border-radius: 10px;
+      }
+      p {
+        font-size: 16px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .learn-more {
+        display: block;
+        text-decoration: none;
+        color: rgb(148, 170, 204);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 20px 30px;
+        background-color: rgb(148, 170, 204);
+        color: white;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        font-size: 18px;
+      }
+      button:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+      .created-by {
+        text-align: center;
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><em>Yoga</em> With Ari</h1>
+
+    <h2>Ashtanga, Vinyasa, Restorative, & Kundalini</h2>
+    <hr />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/401/original/_DSC1098.JPEG?1619998341"
+      alt="Yoga Easy Pose"
+      width="60%"
+    />
+    <hr />
+    <p>
+      Transform your mental, emotional, and physical health through the practice
+      of yoga in the comfort of your own home. Beginner? Intermediate? Advanced?
+      I provide classes for every level, all you will need is a yoga mat and an
+      open heart!
+    </p>
+
+    <a
+      href="https://yogamedicine.com/guide-types-yoga-styles/"
+      target="-blank"
+      class="learn-more"
+    >
+      <strong>Learn more about different styles of yoga here.</strong>
+    </a>
+    <br />
+    <button>Join</button>
+    <div class="created-by">Created by Arianna Brunell</div>
+    <script>
+      function join() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+        if (age < 12) {
+          alert("Come back to join our community when you turn 12!");
+        } else {
+          let email = prompt("What is your email?");
+          alert("Thank you " + name + ", we'll be in touch!");
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", join);
+    </script>
+  </body>
+</html>
